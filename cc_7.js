@@ -5,6 +5,10 @@ const calculateInvoice = (subtotal, taxRate, discount) => {
 
 }
 
-//
+//Task 2
+const calculateHourlyWage = function(salary, hoursPerWeek) {
+    let hourlywage= salary / (hoursPerWeek * 52);
+    console.log (`Hourly wage: $${hourlywage.toFixed(2)}`);  // calculates hourly wage from salary and hours per week
+}
 
 
