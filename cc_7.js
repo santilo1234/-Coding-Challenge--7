@@ -22,3 +22,17 @@ calculateHourlyWage(52000, 40); // Expected output: "Hourly Wage: $25.00"
 calculateHourlyWage(75000, 35); // Expected output: "Hourly Wage: $41.21"
 
 
+//Task 3
+const calculateLoyaltyDiscount = (amount, years) => {
+    let discountRate = years >= 5 ? 0.15 : years >= 2 ? 0.10 : 0.05;
+    let discountedPrice = amount * (1 - discountRate);
+    console.log(`Discounted Price: $${discountedPrice.toFixed(2)}`); // calculates discounted price based on years of loyalty
+}
+
+//Test Data
+calculateLoyaltyDiscount(100, 6); // Expected output: "Discounted Price: $85.00"
+calculateLoyaltyDiscount(200, 2); // Expected output: "Discounted Price: $190.00"
+
+
+
+
