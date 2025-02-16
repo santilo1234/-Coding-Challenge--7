@@ -34,5 +34,17 @@ calculateLoyaltyDiscount(100, 6); // Expected output: "Discounted Price: $85.00"
 calculateLoyaltyDiscount(200, 2); // Expected output: "Discounted Price: $190.00"
 
 
+//Task 4
+const calculateShippingCosts = (weight, location, expidited = false) => {
+    let baseCost = location === "USA" ? 5 + (0.5 * weight) : 10 + (0.7 * weight);
+    if (expedited) baseCost += 10;
+    console.log(`Shipping Cost: $${baseCost.toFixed(2)}`); // calculates shipping cost based on weight, location and if expedited
+}
+
+//Test Data
+calculateShippingCost(10, "USA", true); // Expected output: "Shipping Cost: $20.00"
+calculateShippingCost(5, "Canada", false); // Expected output: "Shipping Cost: $13.50"
+
+
 
 
