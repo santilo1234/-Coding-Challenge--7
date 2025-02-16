@@ -47,4 +47,15 @@ calculateShippingCost(5, "Canada", false); // Expected output: "Shipping Cost: $
 
 
 
+//Task 5
+const calculateLoanInterest = (principal, rate, years) => {
+    let interest = principal * rate * years;
+    console.log(`Total Interest: $${interest.toFixed(2)}`); //calculate loan interest over a specific number of years
+}
+
+
+//Test Data
+calculateLoanInterest(1000, 0.05, 3); // Expected output: "Total Interest: $150.00"
+calculateLoanInterest(5000, 0.07, 5); // Expected output: "Total Interest: $1750.00"
+
 
