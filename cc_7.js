@@ -35,7 +35,7 @@ calculateLoyaltyDiscount(200, 2); // Expected output: "Discounted Price: $190.00
 
 
 //Task 4
-const calculateShippingCosts = (weight, location, expidited = false) => {
+const calculateShippingCost = (weight, location, expedited = false) => {
     let baseCost = location === "USA" ? 5 + (0.5 * weight) : 10 + (0.7 * weight);
     if (expedited) baseCost += 10;
     console.log(`Shipping Cost: $${baseCost.toFixed(2)}`); // calculates shipping cost based on weight, location and if expedited
@@ -71,3 +71,33 @@ const filterHighValueTransactions = (transactions, filterFunction) => {
 let transactions = [500, 1200, 3000, 800, 2200];
 filterHighValueTransactions(transactions, amount => amount > 1000);
 // Expected output: [1200, 3000, 2200]
+
+
+
+//Task 7
+const createBudgetTracker = () => {
+    let balance = 0;
+    return (expense) => {
+        balance -= expense;
+        console.log(`Current Balance: $${balance.toFixed(2)}`); //Updates budget with each expense
+    
+
+
+        
+    };
+};
+
+//Test Data
+let budget = createBudgetTracker();
+budget(300); // Expected output: "Current Balance: -$300"
+budget(200); // Expected output: "Current Balance: -$500"
+
+
+
+//Task 8
+const calculateGrowth = (years, revenue) => {
+    if (years === 0){
+        console.log(`Projected Revenue: $${revenue.toFixed(2)}`);
+        return; // calculates projected revenue over multiple years
+    }
+}
