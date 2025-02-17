@@ -101,3 +101,6 @@ const calculateGrowth = (years, revenue) => {
         return; // calculates projected revenue over multiple years
     }
 }
+//Test Data
+calculateGrowth(8, 1000); // Expected output: "Projected Revenue: $1102.50"
+calculateGrowth(5, 5000); // Expected output: "Projected Revenue: $6381.41"
